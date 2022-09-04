@@ -1,0 +1,11 @@
+<h1>Home Page</h1>
+<br>
+<div *ngIf="isUserAuthenticated()" style="color:blue">
+  <h2>You are Logged In</h2>
+</div>
+<br>
+<ul>
+   <li><a routerLink="/customers">Customers</a></li>
+   <li *ngIf="!isUserAuthenticated()"><a routerLink="/login">Login</a></li>
+   <li *ngIf="isUserAuthenticated()"><a routerLink="logout">LogOut</a></li>
+</ul>
