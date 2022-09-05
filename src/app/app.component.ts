@@ -1,4 +1,5 @@
 import { Component,VERSION } from '@angular/core';
+import * as uuid from 'uuid';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component,VERSION } from '@angular/core';
 })
 export class AppComponent {
   title = 'JwtTokenUbuntu' +VERSION.major;
+  myId =uuid.v4();
 }
